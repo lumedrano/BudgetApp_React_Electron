@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 import Dashboard from "./pages/Dashboard";
@@ -8,7 +8,7 @@ import Transactions from "./pages/Transactions";
 
 function App() {
   return (
-     <Router>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
